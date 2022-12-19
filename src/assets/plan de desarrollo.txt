@@ -1,0 +1,41 @@
+1-5
+como instalar
+carpetas en angular
+que es un componente en angular
+interpolacion : {{}}
+enlace bidireccional
+
+6-10
+directivas
+directivas de atributos
+ciclo de vida de componentes
+event binding
+@input
+
+11-15
+@output
+deteccion de cambios
+pipe
+formularios template driven
+formularios reactivos
+
+16-20
+configuracion de rutas angular
+rutas hijas y parametros
+guards
+resolver en angular
+lazy loading
+
+21-25
+foroot y forchind
+peticion http
+http interceptor
+que es un observable
+content proyect
+
+26-30
+ng container y ng template
+viewchild y funcion
+comunicacion entre componentes
+configurar eslint y preetier
+termino, enlace de lista, enlace de video final y agradecimiento
