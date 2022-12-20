@@ -1,0 +1,26 @@
+.login_section {
+  background-color: #FDB750;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .example-form {
+    width: 50%;
+    border: 1px solid rgba(27, 27, 27, 0.64);
+    border-right: none;
+    border-left: none;
+    border-radius: 50px;
+
+    .form-input {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-evenly;
+      margin: 10px 0;
+      padding: 10px 0;
+
+    }
+  }
+
+}

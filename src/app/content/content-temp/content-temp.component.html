@@ -1,1 +1,31 @@
-<p>content-temp works!</p>
+<section class="main_butons">
+  <div>
+    <h2>Content</h2>
+  </div>
+
+  <div>
+    <img src="../../../assets/gifs/patient.gif" alt="waiting gif">
+  </div>
+
+  <div class="allcards">
+
+    <article class="btn-p" *ngFor="let r of content">
+
+      <button class="all-width">{{r.titulo}}</button>
+
+      <div class="list-topics">
+
+        <button [ngStyle]="{'width':'100%'}" type="button" (click)="despliegue()">Ver temario</button>
+
+        <div *ngIf="abrir" class="topics">
+          <ul>
+            <li *ngFor="let t of r.temas">{{t}}</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </article>
+  </div>
+
+</section>

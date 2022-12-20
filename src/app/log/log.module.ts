@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
 import { LogtempComponent } from './logtemp/logtemp.component';
+import { MaterialModule } from '../shared/material.module';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent,
     LogtempComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    FormsModule
   ]
 })
 export class LogModule { }

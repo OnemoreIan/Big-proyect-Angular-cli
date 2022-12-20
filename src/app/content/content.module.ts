@@ -10,6 +10,9 @@ import { ContentTempComponent } from './content-temp/content-temp.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ContentTempComponent
   ]
 })
 export class ContentModule { }
