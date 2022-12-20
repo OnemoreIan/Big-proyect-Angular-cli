@@ -20,6 +20,14 @@ import { P1tempComponent } from './P1temp/P1temp.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    P1t1Component,
+    P1t2Component,
+    P1t3Component,
+    P1t4Component,
+    P1t5Component,
+    P1tempComponent
   ]
 })
 export class Part1Module { }

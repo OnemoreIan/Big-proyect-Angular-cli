@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentTempComponent } from './content-temp/content-temp.component';
+import { Part1Module } from './Part1/Part1.module';
 
 
 
@@ -9,7 +10,8 @@ import { ContentTempComponent } from './content-temp/content-temp.component';
     ContentTempComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    Part1Module
   ],
   exports: [
     ContentTempComponent

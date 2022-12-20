@@ -11,11 +11,11 @@
 
     <article class="btn-p" *ngFor="let r of content">
 
-      <button class="all-width">{{r.titulo}}</button>
+      <button class="all-width" (click)="direccion()">{{r.titulo}}</button>
 
       <div class="list-topics">
 
-        <button [ngStyle]="{'width':'100%'}" type="button" (click)="despliegue()">Ver temario</button>
+        <button [ngStyle]="{'width':'100%'}" type="button" (click)="despliegue()"><a  >Ver temario </a></button>
 
         <div *ngIf="abrir" class="topics">
           <ul>

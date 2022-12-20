@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { contenido_temp } from './data-content-temp';
 
 @Component({
@@ -16,12 +17,14 @@ export class ContentTempComponent implements OnInit {
       this.abrir = true;
     } else {
       this.abrir = false;
-
     }
-    
   }
 
-  constructor() { }
+  direccion(){
+    this.routing.navigateByUrl('/part1')
+  }
+
+  constructor(private routing:Router) { }
 
   ngOnInit(): void {
   }
