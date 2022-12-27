@@ -1,21 +1,29 @@
-<section class="login_section">
-  <header>
-    <h1>Desgloce de temas en Angular</h1>
-  </header>
-  <form action="" class="example-form">
+<section class="login_section onlibackground">
 
-    <div class="form-input">
-      <label for="user">User</label>
-      <input type="text" placeholder="Example. Pedro" id="user" name="userName" #usernam>
-    </div>
+  <div class="circle">
 
-    <div class="form-input">
+    <header class="title-log">
+      <h1>Desgloce de temas en Angular</h1>
+    </header>
+
+    <form action="" class="example-form">
+
+      <div class="form-input">
+        <label for="user">User</label>
+        <input type="text" placeholder="Example. Pedro" id="user" name="userName" #usernam  formControlName="username" autocomplete="false">
+      </div>
+
+      <div class="form-input">
         <label for="password">Password</label>
-        <input type="password"  id="password" name="userPassword" #passw>
-    </div>
+        <input type="password" id="password" name="userPassword" #passw  formControlName="userpassword">
+      </div>
 
-    <div class="form-input">
-      <button type="submit" (click)="confirmation(usernam.value,passw.value)">Ingresar</button>
-    </div>
-  </form>
+      <div class="form-input form-input-btn" *ngIf="!userpassword.valid && !username.valid">
+        <button type="submit" (click)="confirmation(usernam.value,passw.value)">Ingresar</button>
+      </div>
+      {{usernam}}{{passw}}
+    </form>
+
+  </div>
+
 </section>

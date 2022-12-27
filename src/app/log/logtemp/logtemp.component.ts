@@ -1,4 +1,5 @@
 import { Component, OnInit,OnDestroy } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
@@ -9,9 +10,12 @@ import { Router } from '@angular/router';
 })
 export class LogtempComponent implements OnInit {
 
+  username: FormControl = new FormControl('',[Validators.required]);
+  userpassword: FormControl = new FormControl('',[Validators.required]);
+
   person = {'user':'root','password':'root'};
 
-  constructor(private Router:Router) { }
+  
 
   confirmation(user:string,pass:string){
     if (this.person.user == user && this.person.password == pass) {
@@ -21,6 +25,8 @@ export class LogtempComponent implements OnInit {
     }
     
   }
+
+  constructor(private Router:Router) { }
 
   ngOnInit(): void {
     console.log('login started');
