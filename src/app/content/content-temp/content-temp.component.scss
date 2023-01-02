@@ -15,7 +15,6 @@
     justify-content: space-evenly;
     gap: 10px;
     align-items: initial;
-    border: 1px solid rebeccapurple;
 
     .btn-p {
       width: 12%;
@@ -24,17 +23,16 @@
       flex-flow: column;
       gap: 5px;
 
-
       .all-width {
         width: 100%;
         border-radius: none;
+        font-size: 1.5rem;
       }
 
       .list-topics {
         width: 100%;
         margin: 0 auto;
         min-height: 100px;
-        border: 1px solid blue;
 
         bottom{
             width: 100%;
@@ -42,6 +40,13 @@
 
         .topics{
             width: 100%;
+
+            ul{
+              list-style: none;
+              li{
+                font-size: 1.3rem;
+              }
+            }
         }
       }
     }

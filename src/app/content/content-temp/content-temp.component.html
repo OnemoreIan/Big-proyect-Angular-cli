@@ -1,11 +1,11 @@
-<section class="main_butons">
+<section class="main_butons onlibackground">
   <div>
-    <h2>Content</h2>
+    <h2>Choose a topic</h2>
   </div>
 
-  <div>
+  <frame>
     <img src="../../../assets/gifs/patient.gif" alt="waiting gif">
-  </div>
+  </frame>
 
   <div class="allcards">
 
@@ -15,7 +15,7 @@
 
       <div class="list-topics">
 
-        <button [ngStyle]="{'width':'100%'}" type="button" (click)="despliegue()"><a  >Ver temario </a></button>
+        <button [ngStyle]="{'width':'100%','font-size':'1rem'}" type="button" (click)="despliegue()"><a>Ver temario </a></button>
 
         <div *ngIf="abrir" class="topics">
           <ul>
@@ -26,6 +26,7 @@
       </div>
 
     </article>
+    
   </div>
 
 </section>

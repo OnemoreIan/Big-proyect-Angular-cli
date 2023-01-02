@@ -1,26 +1,97 @@
-<article class="background-temp">
+<div class="background-temp onlibackground">
   <section>
     <h2>Contenido de la parte 1</h2>
   </section>
 
   <div class="topics-content">
 
-    <section class="topics-area" *ngFor="let t of name_topics">
+    <section class="topics-area"><!--  topic1  -->
 
       <div class="topic-title">
-        <h3>{{t}}</h3>
-
-        <button (click)="despliegue()">Abrir tema</button>
+        <h3>{{name_topics[0]}}</h3>
+        
       </div>
 
-      <div class="topic-content" *ngIf="abrir">
-        <h1>contenido</h1>
-        <p1t1></p1t1>
+      <div class="content-card">
+        <sup>
+          <p1t1></p1t1>
+        </sup>
+        
 
       </div>
 
     </section>
 
+    <section class="topics-area"><!--  topic2  -->
+
+      <div class="topic-title">
+        <h3>{{name_topics[1]}}</h3>
+        
+      </div>
+
+      <div class="content-card">
+        <sup>
+          <p1t2></p1t2>
+        </sup>
+        
+
+      </div>
+
+    </section>
+
+    <section class="topics-area"><!--  topic3  -->
+
+      <div class="topic-title">
+        <h3>{{name_topics[0]}}</h3>
+        
+      </div>
+
+      <div class="content-card">
+        <sup>
+          <p1t3></p1t3>
+        </sup>
+        
+
+      </div>
+
+    </section>
+
+    <section class="topics-area"><!--  topic4  -->
+
+      <div class="topic-title">
+        <h3>{{name_topics[0]}}</h3>
+        
+      </div>
+
+      <div class="content-card">
+        <sup>
+          <p1t4></p1t4>
+        </sup>
+        
+
+      </div>
+
+    </section>
+
+    <section class="topics-area"><!--  topic5  -->
+
+      <div class="topic-title">
+        <h3>{{name_topics[0]}}</h3>
+        
+      </div>
+
+      <div class="content-card">
+        <sup>
+          <p1t5></p1t5>
+        </sup>
+        
+
+      </div>
+
+    </section>
+
+    
+
   </div>
 
-</article>
+</div>

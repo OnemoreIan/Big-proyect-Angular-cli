@@ -1,0 +1,25 @@
+h2,h3,h4,h5,h6{
+    
+    color: #333;
+}
+.img{
+    width: 2rem;
+    height: 2rem;
+}
+.size-pic{
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+.size-pic-sm{
+    width: 30%;
+    border-radius: 10px;
+}
+.explanation{
+    width: 100%;
+    p{
+        font-size: 1rem;
+        text-align: justify;
+        color: rgb(30, 30, 30);
+    }
+}

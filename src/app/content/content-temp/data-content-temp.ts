@@ -1,7 +1,7 @@
 export const contenido_temp = [
 
   //section1
-  {'titulo': 'Part1',
+  {'titulo': 'Part 1',
     'temas': [
       'como instalar',
       'carpetas en angular',
@@ -11,7 +11,7 @@ export const contenido_temp = [
     ]},
 
   //section2
-  {'titulo': 'Part2',
+  {'titulo': 'Part 2',
     'temas': [
       'directivas',
       'directivas de atributos',
@@ -21,7 +21,7 @@ export const contenido_temp = [
     ]},
 
   //section3
-  {'titulo': 'Part3',
+  {'titulo': 'Part 3',
     'temas': [
       '@output',
       'deteccion de cambios',
@@ -31,7 +31,7 @@ export const contenido_temp = [
     ]},
 
   //section4
-  {'titulo': 'Part4',
+  {'titulo': 'Part 4',
     'temas': [
       '@configuracion de rutas angular',
       'rutas hijas y parametros',
@@ -41,7 +41,7 @@ export const contenido_temp = [
     ]},
 
   //section5
-  {'titulo': 'Part5',
+  {'titulo': 'Part 5',
     'temas': [
       '@foroot y forchind',
       'peticion http',
@@ -50,7 +50,7 @@ export const contenido_temp = [
       'content proyect'
     ]},
   //section6
-  {'titulo': 'Part6',
+  {'titulo': 'Part 6',
     'temas': [
       '@ng container y ng template',
       'viewchild y funcion',

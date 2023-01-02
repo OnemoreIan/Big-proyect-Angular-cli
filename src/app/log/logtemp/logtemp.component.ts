@@ -1,5 +1,5 @@
 import { Component, OnInit,OnDestroy } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
@@ -10,29 +10,39 @@ import { Router } from '@angular/router';
 })
 export class LogtempComponent implements OnInit {
 
-  username: FormControl = new FormControl('',[Validators.required]);
-  userpassword: FormControl = new FormControl('',[Validators.required]);
-
   person = {'user':'root','password':'root'};
+  loginValidators!: FormGroup;
+
+
+  /* username: FormControl = new FormControl('',[Validators.required]);
+  userpassword: FormControl = new FormControl('',[Validators.required]); */
 
   
 
-  confirmation(user:string,pass:string){
-    if (this.person.user == user && this.person.password == pass) {
-      this.Router.navigateByUrl('/main');
-    } else {
-      alert('Error de credenciales');
-    }
-    
+  myFromBuilder():FormGroup{
+    return this.fb.group({
+      userna: ['',[Validators.required]],
+      passlog: ['',[Validators.required]]
+  })
   }
 
-  constructor(private Router:Router) { }
+  confir2(){
+    this.loginValidators.value[0]
+  }
+  confirmation(user:string,pass:string){
+    if (this.person.user != user || this.person.password != pass) {
+      return alert('Error de credenciales');}
+    this.Router.navigateByUrl('/main');
+  }
+
+  constructor(private Router:Router, private readonly fb:FormBuilder) { }
 
   ngOnInit(): void {
+    this.loginValidators = this.myFromBuilder();
     console.log('login started');
   }
   ngOnDestroy():void {
-    console.log('login destroy');
+    console.log('login ended');
   }
 
 }

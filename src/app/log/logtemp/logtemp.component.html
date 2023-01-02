@@ -3,25 +3,24 @@
   <div class="circle">
 
     <header class="title-log">
-      <h1>Desgloce de temas en Angular</h1>
+      <h1>Desgloce de temas en Angular</h1><!--confirmation(usernam.value,passw.value)-->
     </header>
 
-    <form action="" class="example-form">
+    <form  class="example-form" >
 
       <div class="form-input">
         <label for="user">User</label>
-        <input type="text" placeholder="Example. Pedro" id="user" name="userName" #usernam  formControlName="username" autocomplete="false">
+        <input type="text" id="user" name="userName" #usernam  formControlName="userna">
       </div>
 
       <div class="form-input">
         <label for="password">Password</label>
-        <input type="password" id="password" name="userPassword" #passw  formControlName="userpassword">
+        <input type="password" id="password" name="userPassword" #passw  formControlName="passlog">
       </div>
 
-      <div class="form-input form-input-btn" *ngIf="!userpassword.valid && !username.valid">
+      <div class="form-input form-input-btn" >
         <button type="submit" (click)="confirmation(usernam.value,passw.value)">Ingresar</button>
       </div>
-      {{usernam}}{{passw}}
     </form>
 
   </div>
