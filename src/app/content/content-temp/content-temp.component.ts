@@ -9,16 +9,39 @@ import { contenido_temp } from './data-content-temp';
 })
 export class ContentTempComponent implements OnInit {
 
-  content = contenido_temp;
-  abrir!:boolean;
+  temario1 = [
+    'Como instalar',
+    'Carpetas en angular',
+    'Que es un componente en angular',
+    'Interpolacion',
+    'Enlace bidireccional'
+  ]
 
-  despliegue(){
-    if (this.abrir != true) {
-      this.abrir = true;
+  //nombres de enlaces
+  easy1!:number;
+  easy2!:number;
+  medium1!:number;
+  medium2!:number;
+  hard1!:number;
+  hard2!:number;
+
+  dificultad = [this.easy1,this.easy2,this.medium1,this.medium2,this.hard1,this.hard2];
+
+  //depliqgue de contenido
+
+  content = contenido_temp;
+
+  despliegue(nom:number){
+    console.log('ejecutando\n\n'+nom)
+    if (nom != 1) {
+      nom = 1;
+      console.log('si no\n\n'+nom)
     } else {
-      this.abrir = false;
+      nom = 0;
+      console.log('entonces\n\n'+nom)
     }
   }
+
 
   direccion(){
     this.routing.navigateByUrl('/part1')
@@ -28,5 +51,7 @@ export class ContentTempComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }

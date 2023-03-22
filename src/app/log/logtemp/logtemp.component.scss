@@ -1,16 +1,14 @@
 .login_section {
   background-color: #050A30;
   min-height: 100vh;
-  display: flex;
-  flex-flow: row;
+  display: grid;
   justify-content: center;
   align-items: center;
 
   .circle {
+
     min-width: 40rem;
     min-height: 40rem;
-    width: 40%;
-    height: 90%;
     border: 3px solid white;
     border-radius: 50%;
     animation: borderrainbow infinite 1s alternate-reverse;

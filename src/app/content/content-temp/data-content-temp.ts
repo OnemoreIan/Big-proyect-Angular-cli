@@ -1,8 +1,8 @@
 export const contenido_temp = [
 
   //section1
-  {'titulo': 'Part 1',
-    'temas': [
+  {'title': 'Easy 1',
+    'topics': [
       'como instalar',
       'carpetas en angular',
       'que es un componente en angular',
@@ -11,8 +11,8 @@ export const contenido_temp = [
     ]},
 
   //section2
-  {'titulo': 'Part 2',
-    'temas': [
+  {'title': 'Easy 2',
+    'topics': [
       'directivas',
       'directivas de atributos',
       'ciclo de vida de componentes',
@@ -21,8 +21,8 @@ export const contenido_temp = [
     ]},
 
   //section3
-  {'titulo': 'Part 3',
-    'temas': [
+  {'title': 'Medium 1',
+    'topics': [
       '@output',
       'deteccion de cambios',
       'pipe',
@@ -31,8 +31,8 @@ export const contenido_temp = [
     ]},
 
   //section4
-  {'titulo': 'Part 4',
-    'temas': [
+  {'title': 'Medium 2',
+    'topics': [
       '@configuracion de rutas angular',
       'rutas hijas y parametros',
       'guards',
@@ -41,8 +41,8 @@ export const contenido_temp = [
     ]},
 
   //section5
-  {'titulo': 'Part 5',
-    'temas': [
+  {'title': 'Hard 1',
+    'topics': [
       '@foroot y forchind',
       'peticion http',
       'http interceptor',
@@ -50,8 +50,8 @@ export const contenido_temp = [
       'content proyect'
     ]},
   //section6
-  {'titulo': 'Part 6',
-    'temas': [
+  {'title': 'Hard 2',
+    'topics': [
       '@ng container y ng template',
       'viewchild y funcion',
       'comunicacion entre componentes',
@@ -59,3 +59,8 @@ export const contenido_temp = [
       'termino, enlace de lista, enlace de video final y agradecimiento'
     ]}
 ]
+
+export interface contenido {
+  title: '',
+  topics: []
+}

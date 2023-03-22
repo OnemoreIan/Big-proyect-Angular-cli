@@ -1,32 +1,18 @@
-<section class="main_butons onlibackground">
-  <div>
-    <h2>Choose a topic</h2>
+<section class="contDistribution onlibackground">
+  <div class="mainTitle">
+    <h2>Dificult level</h2>
   </div>
 
-  <frame>
-    <img src="../../../assets/gifs/patient.gif" alt="waiting gif">
-  </frame>
+  <br>
 
-  <div class="allcards">
-
-    <article class="btn-p" *ngFor="let r of content">
-
-      <button class="all-width" (click)="direccion()">{{r.titulo}}</button>
-
-      <div class="list-topics">
-
-        <button [ngStyle]="{'width':'100%','font-size':'1rem'}" type="button" (click)="despliegue()"><a>Ver temario </a></button>
-
-        <div *ngIf="abrir" class="topics">
-          <ul>
-            <li *ngFor="let t of r.temas">{{t}}</li>
-          </ul>
-        </div>
-
+  <div class="categories">
+    <article class="categLink" *ngFor="let x of [0,0,0,0,0,0]; let i = index">
+      <a class="enlace" routerLink="part1" (click)="direccion()"><h4>Ver Contenido</h4></a>
+      <div class="temarios">
+        <p class="elemento" *ngFor="let i of temario1"> {{i}} </p>
       </div>
-
     </article>
-    
   </div>
+
 
 </section>
